@@ -1,0 +1,11 @@
+apiVersion: v2
+name: k8s-pod-service-account
+description: "pod service account"
+type: application
+version: 1.0.0
+appVersion: "1.0.0"
+maintainers:
+  - name: psosnciki
+keywords:
+  - service account
+  - pod

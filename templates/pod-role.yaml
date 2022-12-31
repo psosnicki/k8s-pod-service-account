@@ -1,0 +1,10 @@
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: pod-service-account-cluster-role
+  namespace: {{ include "pod-sevice-account.namespace" . }} 
+rules:
+  - apiGroups: {{- toYaml .Values.apiGroups | nindent 10 }}
+    resources: {{- toYaml .Values.allowedResources | nindent 10 }}
+    verbs: {{- toYaml .Values.allowedVerbs | nindent 10 }}
+    

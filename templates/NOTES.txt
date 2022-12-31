@@ -1,0 +1,18 @@
+Pod service account deployed !
+
+Please use following service account name: {{ include "pod-sevice-account.fullname" . }} in your deployment
+
+{{ include "pod-sevice-account.fullname" . }} configured with:
+
+allowed resources: {{ .Values.allowedResources }}
+allowed groups: {{ .Values.apiGroups }}
+allowed verbs: {{ .Values.allowedVerbs }}
+
+
+
+
+
+
+
+
+

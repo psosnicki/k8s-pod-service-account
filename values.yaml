@@ -1,0 +1,16 @@
+fullnameOverride: "pod-service-account"
+name: "pod-service-account"
+namespace: default
+
+allowedResources:
+  - configmaps
+  - secrets
+
+allowedVerbs:
+  - get
+  - list
+  - watch
+
+apiGroups:
+  - ""
+  - rbac.authorization.k8s.io
