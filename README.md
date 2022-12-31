@@ -4,10 +4,19 @@
 
 Pod service account helm package
 
-# Sample config
+# Install
+
+## Add Repository (stable)
+`$ helm repo add psosnicki-helm-repo-stable  https://psosnicki.github.io/helm3-repo/stable`   
+`$ helm repo update`
+
+## Install Package (stable)  
+`$ helm install my-release psosnicki-helm-repo-stable/k8s-pod-service-account --version=1.0.0`  
+
+# Values
 
 ```
-# default config
+# default values
 
 name: "pod-service-account"
 
