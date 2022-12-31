@@ -1,5 +1,7 @@
 # K8s Pod Service Account
 
+[![Artifact Hub](https://img.shields.io/endpoint?url=https://artifacthub.io/badge/repository/k8s-pod-service-account)](https://artifacthub.io/packages/search?repo=k8s-pod-service-account)
+
 Pod service account helm package
 
 # Sample config
